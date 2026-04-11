@@ -1,2 +1,5 @@
 # My-web-projects
-A repository that contains all my web projects I have built
+This repository contains all the web projects I have made
+
+## RESOURCES USED
+HTML, CSS and javascript
