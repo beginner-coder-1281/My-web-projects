@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dif-menu" id="dif-menu">
+    <div class="inner-dif">
+      <input type="radio" name="dif" id="dif-easy" class="dif-input">
+      <label class="dif-label"for="dif-easy">Easy(1-100)</label>
+      
+      <br>
+      <br>
+      
+      <input type="radio" name="dif" id="dif-medium" class="dif-input">
+      <label class="dif-label"for="dif-medium">Medium(1-1000)</label>
+      
+      <br>
+      <br>
+      
+      <input type="radio" name="dif" id="dif-hard" class="dif-input">
+      <label class="dif-label"for="dif-hard">Hard(1-10000)</label>
+      
+      <br><br><br><br>
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="confirm-dif" class="submit">Comfirm</button>
+    </div>
+  </div>
+  <label id="a-label"></label>
+  <div class="container" id="container">
+    
+    
+    <div>
+      <label class="label" id="label">Enter your guess(1-100)</label>
+    </div>
+    
+    <div>
+      <input type="Number" id="guess-input" placeholder="Your guess here">
+    </div>
+    
+    <button id="submit" class="submit"> Submit </button>
+      <p id="feedback"></p>
+    
+    <button id="try" class="try"> Try Again </button>
+    
+    
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
