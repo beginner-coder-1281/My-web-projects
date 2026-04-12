@@ -1,10 +1,10 @@
 # Overview
 This calculator helps users evaluate mathematical equations in a effortless way, when the user types a mathematical expression, they can press the equal to button in order to get the answer
 # Features
-• Addition\n
-• Subtraction
-• Multiplication
-• Division
+• Addition. 
+• Subtraction. 
+• Multiplication. 
+• Division. 
 • Square
 # Tools used
 • HTML for the basic structure 
