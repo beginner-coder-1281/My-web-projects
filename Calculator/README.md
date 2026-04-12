@@ -5,7 +5,7 @@ This calculator helps users evaluate mathematical equations in a effortless way,
 • Subtraction\
 • Multiplication\
 • Division\
-• Square
+• Square a number
 # Tools used
 • HTML for the basic structure\
 • CSS for the designs\
