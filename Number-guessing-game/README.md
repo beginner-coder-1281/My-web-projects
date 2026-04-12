@@ -11,4 +11,4 @@ This is a number guessing game which chooses a random number based on the diffic
 • CSS for the designs\
 • Javascript for the game logic
 # Live Demo
-[Click this to see a Live Demo of the calculator application](https://my-portfolio-samosa.netlify.app/number-guessing-game/)
+[Click this to see a Live Demo of my number guessing game](https://my-portfolio-samosa.netlify.app/number-guessing-game/)
