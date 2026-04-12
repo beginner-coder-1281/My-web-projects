@@ -8,3 +8,5 @@ A cool minimalistic tic tac toe game with a computer and accurate grid
 • HTML for the cells\
 • CSS for the grid-looking layout\
 • HTML for the user and computer choice and getting the winner
+# Live Demo
+[Click this to see a Live Demo of the tic tac toe game](https://my-portfolio-samosa.netlify.app/tic-tac-toe/)
