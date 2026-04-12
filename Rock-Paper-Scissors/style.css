@@ -1,0 +1,49 @@
+body{
+  background-color: black;
+}
+
+.btn{
+  padding: 50px;
+  font-size: 2.5rem;
+  margin-left: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: goldenrod
+}
+.btn:disabled{
+  background-color: goldenrod;
+  color: inherit;
+  opacity: 1;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#p-choice{
+  margin-top: 50px;
+}
+.para{
+  font-size: 2rem;
+  color: white;
+}
+#try{
+  padding: 30px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  border: none;
+  background-color: orange;
+  display: none;
+  
+  margin-top: 60px;
+  margin-left: 100px;
+}
