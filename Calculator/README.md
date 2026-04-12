@@ -11,3 +11,5 @@ This calculator helps users evaluate mathematical equations in a effortless way,
 • CSS for the designs\
 • Javascript for the input validation and calculation\
 • math.js module for evaluating the expressions
+# Live Demo
+[Click this to see a Live Demo of the calculator application](https://my-portfolio-samosa.netlify.app/calculator/)
