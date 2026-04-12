@@ -11,7 +11,7 @@ A weather app that uses an API to get current weather data for all cities and di
 • A OpenWeatherMap API key to receive the data
 # Disclaimer
 This code will not work if you replace the API key placeholder with a OpenWeatherMap API key.\
-To create a API key follow the given steps:
+To create a API key follow the given steps:\
 • Go to openweathermap.org and login\
 • Go to my api keys Section and you should see a default API key already created\
 • Replace the API key placeholder with your API key\
