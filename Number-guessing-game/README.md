@@ -10,3 +10,5 @@ This is a number guessing game which chooses a random number based on the diffic
 • HTML for the basic structure\
 • CSS for the designs\
 • Javascript for the game logic
+# Live Demo
+[Click this to see a Live Demo of the calculator application](https://my-portfolio-samosa.netlify.app/number-guessing-game/)
