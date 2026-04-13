@@ -79,3 +79,55 @@ p{
   font-size: 2.5rem;
   color: hsla(0, 0%, 0%, 0.75);
 }
+@media screen and (max-width: 480px) and (pointer: coarse) {
+  .weatherForm {
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cityInput {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin: 0 0 15px 0;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 30px 15px;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .cityDisplay, .tempDisplay {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .emojiDisplay {
+    font-size: 5.5rem;
+  }
+
+  .descDisplay {
+    font-size: 1.5rem;
+  }
+}}
+.emojiDisplay{
+  margin: 0;
+  font-size: 7.5rem;
+}
+.error{
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: hsla(0, 0%, 0%, 0.75);
+}
