@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 40px 30px 70px;
+  border-radius: 30px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  max-height: 50vh;
+}
+.todo-app h2{
+  display: flex;
+  color: #002735;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img{
+  width: 30px;
+  margin-left: 10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 40px;
+}
+ul li{
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  font-size: 17px;
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+
+ul li::before{
+  content: ' ';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("img/unchecked.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url("img/checked.png");
+}
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+ul li span:hover{
+  background-color: #edeef0;
+}
+ul li.fade{
+  opacity: 0;
+}
+#feedback{
+  font-size: 20px;
+  margin-left: 30%;
+}
+@media screen and (max-width: 480px) and (pointer: coarse) {
+  input{
+    width: 40px;
+  }
+  button{
+    padding: 16px 30px;
+  }
+  #feedback{
+    margin-left: 15%;
+  }
+  .todo-app{
+    margin-bottom: 200px;
+    max-height: 70vh;
+  }
+  ul li{
+    padding: 12px 8px 12px 10px;
+}
