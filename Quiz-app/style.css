@@ -12,7 +12,6 @@ body{
   width: 70%;
   height: 80%;
   background-color: #FFFFFF;
-  margin-left: 20px;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 100px;
@@ -55,4 +54,13 @@ body{
 }
 #submit{
   background-color: lawngreen;
+}
+@media screen and (max-width: 480px) and (pointer: coarse) {
+  .container{
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
 }
