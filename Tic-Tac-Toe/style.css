@@ -14,6 +14,7 @@ body{
   display: grid;
   grid-template-rows: 80px 80px 80px;
   grid-template-columns: 80px 80px 80px;
+  margin-bottom: 50px;
 }
 
 .cell{
@@ -24,6 +25,37 @@ body{
   color: white;
   text-align: top;
   font-size: 20px;
+}
+
+
+#myP{
+  color: white;
+  margin-left: 35%;
+  margin-top: -40%;
+  font-size: 30px;
+}
+
+#try{
+  display: none;
+  padding: 30px 30px;
+  margin-left: 38vw;
+  border: none;
+  border-radius: 50px;
+  background-color: orangered;
+}
+
+@media (max-width: 480px) and (pointer: coarse) {
+  .cell{
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+  #myP{
+    font-size: 30px;
+  }
+  #try{
+    padding: 30px 30px;
+  }
 }
 .cell:nth-child(1),
 .cell:nth-child(2),
@@ -41,20 +73,4 @@ body{
 .cell:nth-child(5),
 .cell:nth-child(6) {
   border-bottom: 2px solid white;
-}
-
-#myP{
-  color: white;
-  margin-left: 35%;
-  margin-top: -40%;
-  font-size: 30px;
-}
-
-#try{
-  display: none;
-  margin-left: 42.5%;
-  padding: 30px 30px;
-  border: none;
-  border-radius: 50px;
-  background-color: orangered;
 }
