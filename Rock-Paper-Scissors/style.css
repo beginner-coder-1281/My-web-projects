@@ -47,3 +47,15 @@ body{
   margin-top: 60px;
   margin-left: 100px;
 }
+@media (max-width: 480px) and (pointer: coarse) {
+  .btn{
+    padding: 25px;
+  }
+  .para{
+    font-size: 1.5rem;
+  }
+  #try{
+    font-size: 1rem;
+    padding: 30px;
+  }
+}
