@@ -107,6 +107,7 @@ ul li.fade{
   font-size: 20px;
   margin-left: 30%;
 }
+
 @media screen and (max-width: 480px) and (pointer: coarse) {
   input{
     width: 40px;
@@ -123,4 +124,4 @@ ul li.fade{
   }
   ul li{
     padding: 12px 8px 12px 10px;
-}
+  }
