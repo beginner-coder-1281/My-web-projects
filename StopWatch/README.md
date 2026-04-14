@@ -9,4 +9,4 @@ A simple minimalistic stopwatch in order to track time accurately and display it
 • CSS for the designs\
 • Javascript for Tracking the time and handling button pressing
 # Live Demo
-[Click this to see a Live Demo of the stopwatch](https://my-portfolio-samosa.netlify.app/stopwatch/)
+[Click this to see a Live Demo of the stopwatch](https://my-portfolio-samosa.neocities.org/Stopwatch/)
