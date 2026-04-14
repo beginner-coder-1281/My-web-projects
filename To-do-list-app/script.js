@@ -15,6 +15,19 @@ function addTask(){
         return;
     }
     
+    if(inputBox.value.trim().length > 200){
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'warning',
+            title: 'Task cannot be longer than 200 characters',
+            showConfirmButton: false,
+            timer: 2500,
+            timerProgressBar: true
+        });
+        inputBox.value = "";
+        return;
+    }
     let li = document.createElement("li");
     li.textContent = inputBox.value.trim();
     taskList.appendChild(li);
