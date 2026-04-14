@@ -10,4 +10,4 @@ This rock paper scissors game provides a easy to play game with accurate winner 
 • CSS for the designs\
 • Javascript for generating computer choice and checking the winner, as well as handling user choice
 # Live Demo
-[Click this to see a Live Demo of the rock paper scissors game](https://my-portfolio-samosa.netlify.app/rock-paper-scissor/)
+[Click this to see a Live Demo of the rock paper scissors game](https://my-portfolio-samosa.neocities.org/Rock-paper-scissor/)
