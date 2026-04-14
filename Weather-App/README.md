@@ -10,7 +10,7 @@ A weather app that uses an API to get current weather data for all cities and di
 • Javascript for receiving and displaying weather data\
 • A OpenWeatherMap API key to receive the data
 # Live Demo
-[Click this to see a Live Demo of the weather app](https://my-portfolio-samosa.netlify.app/weather-app/)
+[Click this to see a Live Demo of the weather app](https://my-portfolio-samosa.neocities.org/Weather-App/)
 
 # Disclaimer
 This code will not work if you replace the API key placeholder with a OpenWeatherMap API key.\
