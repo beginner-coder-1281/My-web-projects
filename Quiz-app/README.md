@@ -10,7 +10,7 @@ This project presents a quiz to the user with saving user choices, generating qu
 • CSS for the designs\
 • Javascript for generating the questions and handling the submission of the quiz
 # Live Demo
-[Click this to see a Live Demo of the quiz application](https://my-portfolio-samosa.netlify.app/quiz-app/)
+[Click this to see a Live Demo of the quiz application](https://my-portfolio-samosa.neocities.org/Quiz-App/)
 
 # Note to contributors
 To add questions to the quiz, you can add the question in the questions array, as well as the options and answer and the question will be automatically generated.
