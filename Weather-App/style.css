@@ -121,13 +121,4 @@ p{
   .descDisplay {
     font-size: 1.5rem;
   }
-}}
-.emojiDisplay{
-  margin: 0;
-  font-size: 7.5rem;
-}
-.error{
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: hsla(0, 0%, 0%, 0.75);
 }
