@@ -1,3 +1,5 @@
+// defining questions
+
 const questions = [
 {text: "What is the capital of france?", 
     options: ["A.London", "B.Paris", "C.Banana", "D.The moon"],
@@ -85,15 +87,20 @@ answer: "C"}
 
 ];
 
+// defining core variables
 let selected = new Array(questions.length).fill(null)
 let current = 0
 let winner = false;
 const container = document.getElementById("container");
 const questionDiv = document.getElementById("question-div")
+
+// function to display next question
 function next(q, index){
     
     questionDiv.innerHTML = "";
     document.getElementById("submit-div").innerHTML = "";
+    
+    // Generating next question and options
     questionDiv.innerHTML += `
     <div class="question-block">
         <h3>${index + 1}.${q.text}</h3>
