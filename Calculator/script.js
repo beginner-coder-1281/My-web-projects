@@ -1,11 +1,16 @@
+// function to update the display and validate input
 function append(char){
     let display = document.getElementById("display");
+    
+    // defining important stats
     const operators = ["+", "-", "/", "*"]
     let value = display.value;
     let last = value.slice(-1);
     let lastTwo = value.slice(-2)
     let numbers = display.value.split(/[+\-\*\/]/)
     let currentNum = numbers[numbers.length - 1]
+    
+    // handling input of operators and prevent invalid input
     if(operators.includes(char)){
         if(operators.includes(last)){
             if(char != "-"){
@@ -18,36 +23,56 @@ function append(char){
         if(display.value == "-" && char == "-") return;
         if(display.value == "") return;
     }
+    
+    // preventing 2 decimals in one number
     if(char == "."){
         if(currentNum.includes(".")){
             return;
         }
     }
+    
+    // clearing display on append if display.value is not a valid numerical number
     if(display.value == "Infinity" || display.value == "-Infinity" || display.value == "NaN" || display.value == "undefined"){
         display.value = "";
         if(operator.includes(char) && char != "-") return;
     }
+    
+    // adding character to the display and scrolling automatically
     display.value += char;
     display.scrollLeft = display.scrollWidth;
 }
+
+
+// function to calculate the result of the expression on the display
 function calculate(){
     let display = document.getElementById("display");
     
+    // using math.js to evaluate expressions safely
     if(display.value == "") return;
-    display.value = math.evaluate(display.value)
+    display.value = math.evaluate(display.value);
 }
+
+// function to remove last character
 function backSpace(){
     let display = document.getElementById("display");
-    if(display.value == "Infinity" || display.value == "-Infinity" || display.value == "NaN" || display.value == "undefined"){
+    
+    // clearing the display if display is not a valid numerical number
+    if (display.value == "Infinity" || display.value == "-Infinity" || display.value == "NaN" || display.value == "undefined"){
         display.value = "";
     }
+    
+    // removing the last character
     display.value = display.value.slice(0, -1);
     
 }
+
+// function to clear display
 function clearDisplay(){
     let display = document.getElementById("display");
     display.value = "";
 }
+
+// function to find square the result of the calculate function
 function square(){
     if(document.getElementById("display").value){
         let display = document.getElementById("display")
@@ -57,6 +82,8 @@ function square(){
     }
 }
 
+
+// all the event listeners and functions to their designated buttons
 document.getElementById("clear").addEventListener('click', clearDisplay);
 document.getElementById("backspace").addEventListener('click', backSpace);
 document.getElementById("square").addEventListener('click', square);
