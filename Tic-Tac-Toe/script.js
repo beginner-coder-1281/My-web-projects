@@ -1,3 +1,4 @@
+// defining core variables
 let player = "X";
 let comp = "O";
 let current = "player";
@@ -8,8 +9,11 @@ const wins = [
 ];
 let cells = document.querySelectorAll(".cell");
 let winner = null;
+
+// adding event listener to all the buttons
 document.querySelectorAll(".cell").forEach(button => {
     button.addEventListener("click", function(){
+        //Checking and changing textContent of the buttons
         if(button.textContent != ""){
             return;
         }
@@ -21,9 +25,11 @@ document.querySelectorAll(".cell").forEach(button => {
                 button.textContent = player;
                 current = "comp"
             }
+            // Checking for winner and for draw
             checkWinner();
             checkDraw();
             
+            // display winner
             if(winner){
                 if(winner == "X"){
                 document.getElementById("myP").textContent = `Winner: player`;
@@ -31,9 +37,11 @@ document.querySelectorAll(".cell").forEach(button => {
                 else if(winner == "O"){
                     document.getElementById("myP").textContent = "Winner: computer";
                 }
+                // displaying try again button and making it reload the page
                 document.getElementById("try").onclick = function(){location.reload()};
                 document.getElementById("try").style.display = "flex";
                 
+                // disabling all buttons
                 document.querySelectorAll(".cell").forEach(button => {
                     button.disabled = true;
                 });
@@ -41,12 +49,16 @@ document.querySelectorAll(".cell").forEach(button => {
         }
     });
 });
+
+// function to check for draw
 function checkDraw(){
+    // checking the number of full checks
     let full = 0;
     cells.forEach(cell => {
         if(cell.textContent !== "") full++;
     });
-
+    
+    // if all cells are full and there is not a winner, showing draw and disabling buttons
     if(full === 9 && !winner){
         winner = "Draw";
         document.getElementById("myP").textContent = "Winner: Draw";
@@ -57,25 +69,38 @@ function checkDraw(){
         });
 }
 }
-    
+
+// function to check winner    
 function checkWinner(){
+    
+    // checking the below code with all win combinations
     for(let i = 0; i < wins.length; i++){
+        
+        // defining the value of a, b and c 
         let a = wins[i][0];
         let b = wins[i][1];
         let c = wins[i][2];
+        
+        // if the first cell text content is the same as the second cell and the second cell text content is same as the third cell, there is a winner
         if(cells[a].textContent !== "" && cells[a].textContent === cells[b].textContent && cells[b].textContent === cells[c].textContent){
+            // storing winner using cells[a].textContent
             winner = cells[a].textContent;
         }
     }
 }
+
+// function to make random computer move
 function compMove(){
+    
+    // while move is not valid, generate a random move
     let valid = false;
     while(!valid){ 
-        let rand = Math.floor(Math.random() * 9);
+        let rand = Math.floor(Math.random() * 9); // generating number from 1 to 9
+        // filling the random cell with the computers letter
         if(cells[rand].textContent === ""){
             cells[rand].textContent = comp;
             current = "player";
-            valid = true;
+            valid = true; // breaking the loop
         }
     }
 }
