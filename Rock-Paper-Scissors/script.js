@@ -1,7 +1,9 @@
+// defining core variables
 let player;
 let comp;
 let winner;
 
+// Adding event listeners to all 3 buttons
 document.getElementById("rock").addEventListener("click", function(){
     player = "rock";
     disableBtns();
@@ -18,12 +20,14 @@ document.getElementById("scissors").addEventListener("click", function(){
     updateValues();
 });
 
+// function to disable the clicking of all buttons
 function disableBtns(){
     document.querySelectorAll(".btn").forEach(button => {
         button.disabled = true;
     });
 }
 
+// function to generate random computer choice
 function compChoice(){
     const random = Math.floor(Math.random() * 3) + 1;
     
@@ -31,8 +35,11 @@ function compChoice(){
     else if(random == 2) comp = "paper";
     else if(random == 3) comp = "scissors";
 }
+
+// function to check winner using a switch
 function checkWinner(){
     switch(true){
+        // checking winner
         case (player == "rock" && comp == "paper"):
             winner = "comp";
             break;
@@ -55,10 +62,14 @@ function checkWinner(){
             winner = "draw"
             break;
     }
+    
+    // displaying try again button
     tryAgain = document.getElementById("try")
     tryAgain.style.display = "block";
     tryAgain.onclick = function(){location.reload()};
 }
+
+// Updating html paragraphs to provide feedback to user
 function updateValues(){
     
     compChoice();
